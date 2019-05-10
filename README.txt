@@ -1,4 +1,4 @@
-½øÈëapidoc.jsonÍ¬Ò»Ä¿Â¼ºóÖ´ĞĞ
+è¿›å…¥apidoc.jsonåŒä¸€ç›®å½•åæ‰§è¡Œ
 apidoc -i src/ -o apidoc/
 
 {"message":"Done.","level":"info"}
