@@ -45,7 +45,7 @@ define({ "api": [
           },
           {
             "group": "Success 200",
-            "type": "Object[]",
+            "type": "Array[]",
             "optional": false,
             "field": "list",
             "description": "<p>数据列表</p>"
@@ -159,7 +159,7 @@ define({ "api": [
           },
           {
             "group": "Success 200",
-            "type": "Object[]",
+            "type": "Array[]",
             "optional": false,
             "field": "list",
             "description": "<p>数据列表</p>"
@@ -202,7 +202,14 @@ define({ "api": [
             "description": "<p>用户id</p>"
           }
         ]
-      }
+      },
+      "examples": [
+        {
+          "title": "请求示例：",
+          "content": "{\"id\":1}",
+          "type": "json"
+        }
+      ]
     },
     "success": {
       "fields": {
@@ -222,7 +229,23 @@ define({ "api": [
             "description": "<p>用户名</p>"
           }
         ]
-      }
+      },
+      "examples": [
+        {
+          "title": "成功返回示例：",
+          "content": "{\"id\":\"1\",\"name\":\"jason\"}",
+          "type": "json"
+        }
+      ]
+    },
+    "error": {
+      "examples": [
+        {
+          "title": "失败返回示例：",
+          "content": "{\"code\":10002,\"msg\":\"数据获取失败\"}",
+          "type": "json"
+        }
+      ]
     },
     "filename": "src/User.php",
     "groupTitle": "User"

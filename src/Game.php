@@ -13,7 +13,7 @@ class Game
      *
      * @apiSuccess {Number}   code      错误码
      * @apiSuccess {String}   msg       错误提示
-     * @apiSuccess {Object[]} list      数据列表
+     * @apiSuccess {Array[]} list      数据列表
      * @apiSuccess {Number}   list.id   游戏id
      * @apiSuccess {String}   list.name 游戏名
      */

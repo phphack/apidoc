@@ -13,7 +13,7 @@ class User
      *
      * @apiSuccess {Number}   code      错误码
      * @apiSuccess {String}   msg       错误提示
-     * @apiSuccess {Object[]} list      数据列表
+     * @apiSuccess {Array[]} list      数据列表
      * @apiSuccess {Number}   list.id   用户id
      * @apiSuccess {String}   list.name 用户名
      */
@@ -25,10 +25,16 @@ class User
      * @apiName get_one
      * @apiGroup User
      *
-     * @apiParam {Number} id 用户id
+     * @apiParam {Number} id    用户id
+     * @apiParamExample {json}  请求示例：
+     * {"id":1}
      *
      * @apiSuccess {String} id   用户id
      * @apiSuccess {String} name 用户名
+     * @apiSuccessExample {json} 成功返回示例：
+     * {"id":"1","name":"jason"}
+     * @apiErrorExample {json}   失败返回示例：
+     * {"code":10002,"msg":"数据获取失败"}
      */
     public function get_one() {}
 }
